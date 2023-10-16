@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/sign in.css">
+</head>
+<body>
+    <div class="page-container">
+        <div class="sidebar">
+            <%- include('partials/sidebar.ejs') %>
+        </div>
+        <div class="form-container">
+            <h1>Sign In</h1>
+            <form action="/login" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+                
+                <div>
+                <button class="sign-in-btn">Sign In</button>
+                </div>
+            </form>
+        </div>    
+    </div>
+    
+    <script src="signin.js"></script>
+</body>
+</html>
